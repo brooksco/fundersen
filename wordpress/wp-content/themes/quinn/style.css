@@ -3315,11 +3315,9 @@ h1, h2, h3, h4, h5, h6 {
 #main {
   margin-left: 5%;
   margin-right: 5%;
-  padding-top: 2em;
   padding-bottom: 8em; }
 
 #home {
-  margin-top: -2em;
   margin-bottom: -8em;
   color: white;
   padding-top: 5%;
@@ -3350,9 +3348,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 1em;
   text-align: right;
   font-weight: 800;
-  color: #333333; }
+  color: #333333;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -ms-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: all 0.15s ease; }
 #outer-navbar li a:hover {
-  background-color: #f8f8f8; }
+  -webkit-transform: skew(-20deg, 0deg);
+  -mos-transform: skew(-20deg, 0deg);
+  -ms-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+  transform: skew(-20deg, 0deg); }
 
 .color-two {
   background-color: #f8f8f8; }
@@ -3369,6 +3376,51 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   margin-top: 0em; }
 
+.responsive-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.responsive-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.published {
+  display: block;
+  background-color: #fafafa;
+  padding: 3em 2.5em 5.5em 2.5em; }
+  .published h3 {
+    font-weight: 700;
+    margin-bottom: .5em; }
+  .published h4 {
+    font-style: italic;
+    font-weight: 400; }
+  .published img {
+    float: left;
+    width: 160px;
+    margin-right: 1.5em; }
+  .published a {
+    background-color: #555555;
+    background-color: #5ab093;
+    padding: .75em 2.5em .75em 2.5em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    float: right;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease; }
+  .published a:hover {
+    background-color: #49997e; }
+
 footer nav {
   margin-bottom: .5em; }
   footer nav li a {
@@ -3379,9 +3431,18 @@ footer nav {
     font-family: "Open Sans";
     text-align: center;
     font-weight: 700;
-    color: #333; }
+    color: #333;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease; }
   footer nav li a:hover {
-    text-decoration: underline; }
+    -webkit-transform: skew(-20deg, 0deg);
+    -mos-transform: skew(-20deg, 0deg);
+    -ms-transform: skew(-20deg, 0deg);
+    -o-transform: skew(-20deg, 0deg);
+    transform: skew(-20deg, 0deg); }
 footer p {
   font-size: .9em;
   text-align: center; }

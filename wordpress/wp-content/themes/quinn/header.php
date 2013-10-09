@@ -16,12 +16,12 @@
 
 	<div class="grid">
 		<div class="unit-spacing">
-			<div class="grid__item one-fifth palm-one-whole color-one">
+			<div class="grid__item one-fifth palm-one-whole">
 
 				<!-- Sidebar -->
 				<?php get_sidebar(); ?>
 				<!-- End Sidebar -->
 
-			</div><div class="grid__item four-fifths palm-one-whole color-three">
+			</div><div class="grid__item four-fifths palm-one-whole">
 
 			<div id="main">

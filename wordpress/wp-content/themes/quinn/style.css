@@ -3307,26 +3307,46 @@ h1, h2, h3, h4, h5, h6 {
 
 #sidebar {
   padding-top: 2em;
-  padding-left: 2%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   position: fixed;
-  width: 20%;
-  max-width: 240px; }
+  width: 25%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%; }
 
-#main {
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-bottom: 8em; }
-
-#home {
-  margin-bottom: -8em;
-  color: white;
-  padding-top: 5%;
+.content {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 2em; }
+
+#home {
+  color: white;
+  font-size: 1.25em;
   background-position: center bottom;
   background-size: cover;
   background-image: url("img/quinn.jpg");
   height: 1400px; }
+
+#reel {
+  background-color: black;
+  color: white;
+  padding-bottom: 16em;
+  height: 100%;
+  margin-bottom: -8em; }
+  #reel p {
+    text-align: right;
+    margin-top: 1em; }
+
+#personal {
+  padding-bottom: 5em;
+  white-space: nowrap; }
+  #personal img {
+    height: 500px; }
+
+.personal-image {
+  display: inline-block;
+  margin-right: 4em; }
 
 #name-link {
   text-decoration: none; }
@@ -3337,7 +3357,52 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
   color: #333333; }
 
-#outer-navbar li a {
+.post {
+  padding-top: 2em; }
+
+.post-break {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #eeeeee; }
+
+.post-title a {
+  color: #5ab093;
+  text-decoration: none; }
+  .post-title a:hover {
+    color: #49997e; }
+
+.post-author {
+  text-align: center;
+  font-size: .9em;
+  color: #777777;
+  font-weight: 300; }
+
+.post-time {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 1.25em;
+  margin-bottom: 0; }
+
+#post-footer {
+  padding-bottom: 10em; }
+
+.nav-previous, .nav-next {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 1em; }
+  .nav-previous a, .nav-next a {
+    color: #5ab093;
+    text-decoration: none; }
+    .nav-previous a:hover, .nav-next a:hover {
+      color: #49997e; }
+
+#outer-navbar li a, #social-navbar li a {
   font-family: "Open Sans";
   text-decoration: none;
   text-transform: uppercase;
@@ -3354,18 +3419,18 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: 0.15s ease;
   -o-transition: 0.15s ease;
   transition: all 0.15s ease; }
-#outer-navbar li a:hover {
+#outer-navbar li a:hover, #social-navbar li a:hover {
   -webkit-transform: skew(-20deg, 0deg);
   -mos-transform: skew(-20deg, 0deg);
   -ms-transform: skew(-20deg, 0deg);
   -o-transform: skew(-20deg, 0deg);
   transform: skew(-20deg, 0deg); }
 
-.color-two {
-  background-color: #f8f8f8; }
-
-.color-three {
-  background-color: white; }
+#social-navbar {
+  margin-top: 1.5em; }
+  #social-navbar li a {
+    font-size: 1em;
+    font-weight: 200; }
 
 #signature {
   display: block;
@@ -3393,7 +3458,7 @@ h1, h2, h3, h4, h5, h6 {
 .published {
   display: block;
   background-color: #fafafa;
-  padding: 3em 2.5em 5.5em 2.5em; }
+  padding: 2em 2.5em 20em 2.5em; }
   .published h3 {
     font-weight: 700;
     margin-bottom: .5em; }
@@ -3402,8 +3467,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400; }
   .published img {
     float: left;
-    width: 160px;
-    margin-right: 1.5em; }
+    width: 180px;
+    margin-right: 1.5em;
+    margin-bottom: 1em; }
   .published a {
     background-color: #555555;
     background-color: #5ab093;

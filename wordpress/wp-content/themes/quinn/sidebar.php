@@ -16,4 +16,12 @@
 		<li><a href="#">Contact</a></li> -->
 	</nav>
 
+	<nav id="social-navbar" class="nav nav--stacked">
+
+		<li><a href="#">Vimeo</a></li>
+		<li><a href="#">Instagram</a></li>
+		<li><a href="#">Twitter</a></li>
+
+	</nav>
+
 </div>

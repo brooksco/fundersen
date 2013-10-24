@@ -1,49 +1,26 @@
 <?php get_header(); ?>
 
 
-<!-- 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php the_content(); ?>
+	<?php get_template_part( 'content' ); ?>
 
-<?php endwhile; else: ?>
+	<hr class="post-break" />
+
+<?php endwhile; ?> 
+
+	<div id="nav-container" class="content">
+
+		<div class="nav-previous"><?php next_posts_link( 'Older posts' ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( 'Newer posts' ); ?></div>
+
+	</div>
+
+<?php else: ?>
 	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
- -->
 
-
-<!-- temporary for development -->
-
-<?php if ( is_page('Reel') ) {
-
-include 'pages/reel.php'; 
-
-} ?>
-
-<?php if ( is_page('Personal') ) {
-
-include 'pages/personal.php'; 
-
-} ?>
-
-<?php if ( is_page('Commercial') ) {
-
-include 'pages/commercial.php'; 
-
-} ?>
-
-<?php if ( is_page('Published') ) {
-
-include 'pages/published.php'; 
-
-} ?>
-
-<?php if ( is_page('About') ) {
-
-the_content();
-
-} ?>
-
+<footer id="post-footer"></footer>
 
 
 <?php get_footer(); ?>

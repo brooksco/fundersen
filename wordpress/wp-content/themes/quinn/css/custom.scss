@@ -8,6 +8,9 @@
 
 
 $header-font: 'Open Sans';
+$top-padding: 2em;
+
+
 $text-color: #333;
 $text-lighter: #555;
 $color-two: #f8f8f8;
@@ -56,42 +59,75 @@ h1, h2, h3, h4, h5, h6 {
 
 #sidebar {
 	padding-top: 2em;
-	padding-left: 2%;
-	// padding-right: 1%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 
 	position: fixed;
-	width: 20%;
-	max-width: 240px;
-	 // width: inherit;
-  //   top:0;
-  //   bottom: 0;
-  //   // left: 0;
-  //   // right: 0;
+	width: 25%;
+	max-width: 300px;
 
-  //   margin: auto;
+  	background-color: rgba(255, 255, 255, .6);
+ 	height: 100%;
+
 }
 
 
 #main {
-	margin-left: 5%;
-	margin-right: 5%;
-	// padding-top: 2em;
-	padding-bottom: 8em;
-	// background-color: #fafafa;
-	// background-color: #eee;
+	// margin-left: 2%;
+	// margin-right: 5%;
+}
+
+.content {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: $top-padding;
 }
 
 #home {
 	// margin-top: -2em;
-	margin-bottom: -8em;
+	// margin-bottom: -8em;
 	color: white;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
+	// padding-top: $top-padding;
+	font-size: 1.25em;
+	// padding-left: 5%;
+	// padding-right: 5%;
 	background-position: center bottom;
 	background-size: cover;
 	background-image: url('img/quinn.jpg');
 	height: 1400px;
+}
+
+
+#reel {
+	background-color: black;
+	color: white;
+	// padding-top: $top-padding;
+	// padding-left: 5%;
+	// padding-right: 5%;
+	padding-bottom: 16em;
+	height: 100%;
+	margin-bottom: -8em;
+
+	p {
+		text-align: right;
+		margin-top: 1em;
+	}
+
+}
+
+#personal {
+	padding-bottom: 5em;
+	white-space: nowrap;
+
+	img {
+		height: 500px;	
+	}
+
+}
+
+.personal-image {
+	display: inline-block;
+	margin-right: 4em;
 }
 
 #name-link {
@@ -104,6 +140,79 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 	color: $text-color;
 }
+
+.post {
+	padding-top: $top-padding;
+	// padding-bottom: 2em;
+}
+
+.post-break {
+	margin-top: 3em;
+	margin-bottom: 1em;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px $lighter-gray;
+}
+
+.post-title {
+
+	a {
+	color: $aqua;
+	text-decoration: none;
+
+		&:hover {
+			color: $dark-aqua;
+
+		}
+
+	}
+}
+
+.post-author {
+	text-align: center;
+	font-size: .9em;
+	color: $light-gray;
+	font-weight: 300;
+}
+
+.post-time {
+	font-family: $header-font;
+	font-weight: 300;
+	font-size: 1.25em;
+	margin-bottom: 0;
+}
+
+#post-footer {
+	padding-bottom: 10em;
+}
+
+#nav-container {
+
+}
+
+.nav-previous, .nav-next {
+	display: inline-block;
+	font-family: $header-font;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-right: 1em;
+
+	a {
+		color: $aqua;
+		text-decoration: none;
+
+		&:hover {
+			color: $dark-aqua;
+		}
+	}
+}
+
+.nav-next {
+
+}
+
 
 #outer-navbar {
 
@@ -144,18 +253,19 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#social-navbar {
+	@extend #outer-navbar;
+	margin-top: 1.5em;
+	// position: fixed;
+	// bottom: 0px;
 
+	li {
+		a {
+			font-size: 1em;
+			font-weight: 200;
+		}
+	}
 
-.color-one {
-
-}
-
-.color-two {
-	background-color: $color-two;
-}
-
-.color-three {
-	background-color: $color-three;
 }
 
 #signature {
@@ -195,7 +305,8 @@ h1, h2, h3, h4, h5, h6 {
 	// background-color: #639886;
 	// padding-top: 2em;
 	// padding-bottom: 2em;
-	padding: 3em 2.5em 5.5em 2.5em;
+	padding: $top-padding 2.5em 20em 2.5em;
+	// padding-bottom: 8em;
 
 	h3 {
 		font-weight: 700;
@@ -209,8 +320,9 @@ h1, h2, h3, h4, h5, h6 {
 
 	img {
 		float: left;
-		width: 160px;
+		width: 180px;
 		margin-right: 1.5em;
+		margin-bottom: 1em;
 	}
 
 	p {
@@ -243,9 +355,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+
 footer {
 
-	// margin-top: -8em;
+	// margin-top: -10em;
+	// padding-bottom: 2em;
+	// background-color: inherit;
 	// color: white;
 
 	nav {

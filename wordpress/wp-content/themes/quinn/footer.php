@@ -1,7 +1,7 @@
 </div>
 
 <!-- Main footer -->
-<footer>
+<!-- <footer>
 
 	<nav class="nav nav--banner">
 		<li><a href="#">Youtube</a></li> 
@@ -15,7 +15,7 @@
 		© 2013 Funderson
 	</p>
 
-</footer>
+</footer> -->
 <!-- End the main footer -->
 
 

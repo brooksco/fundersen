@@ -1,13 +1,14 @@
 <script src="js/jquery.js"></script>
 <script>
 	$(function(){
-		$("#personal").wrapInner("<table cellspacing='30'><tr>");
-		$("#personal-image").wrap("<td>");
+		// $("#personal").wrapInner("<table cellspacing='30'><tr>");
+		// $("#personal-image").wrap("<td>");
 	});
 </script>
 
 
 <div id="personal" class="content">
+
 
 	<div class="personal-image">
 
@@ -34,5 +35,4 @@
 	</div>
 
 	
-
 </div>

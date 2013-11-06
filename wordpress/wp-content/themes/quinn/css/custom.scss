@@ -8,7 +8,8 @@
 
 
 $header-font: 'Open Sans';
-$top-padding: 2em;
+$body-font: 'Gentium Book Basic';
+$top-padding: 2.5em;
 
 
 $text-color: #333;
@@ -28,7 +29,7 @@ $lighter-gray: #eee;
 $lightest-gray: #fafafa;
 
 body {
-	font-family: 'Gentium Book Basic';
+	font-family: $body-font;
 	font-weight: 300;
 }
 
@@ -66,8 +67,8 @@ h1, h2, h3, h4, h5, h6 {
 	width: 25%;
 	max-width: 300px;
 
-  	background-color: rgba(255, 255, 255, .6);
- 	height: 100%;
+	background-color: rgba(255, 255, 255, .6);
+	height: 100%;
 
 }
 
@@ -116,18 +117,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #personal {
+	padding-top: 4em;
 	padding-bottom: 5em;
 	white-space: nowrap;
-
-	img {
-		height: 500px;	
-	}
 
 }
 
 .personal-image {
 	display: inline-block;
 	margin-right: 4em;
+
+	img {
+		height: 500px;
+		max-width: none;
+	}
 }
 
 #name-link {
@@ -139,15 +142,35 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 	text-align: right;
 	color: $text-color;
+
+	&:hover {
+		color: $medium-gray;
+	}
+
 }
 
 .post {
 	padding-top: $top-padding;
-	// padding-bottom: 2em;
+	padding-bottom: 2.5em;
+}
+
+.post img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1em;
 }
 
 .post-break {
-	margin-top: 3em;
 	margin-bottom: 1em;
 	width: 75%;
 	margin-left: auto;
@@ -158,8 +181,8 @@ h1, h2, h3, h4, h5, h6 {
 .post-title {
 
 	a {
-	color: $aqua;
-	text-decoration: none;
+		color: $aqua;
+		text-decoration: none;
 
 		&:hover {
 			color: $dark-aqua;
@@ -170,8 +193,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-author {
-	text-align: center;
-	font-size: .9em;
+	margin-top: 2em;
+	margin-bottom: 0;
+	font-size: 1em;
 	color: $light-gray;
 	font-weight: 300;
 }
@@ -230,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 			text-align: right;
 			font-weight: 800;
 			color: $text-color;
-	
+
 			-webkit-transition: 0.15s ease;
 			-moz-transition: 0.15s ease;
 			-ms-transition: 0.15s ease;
@@ -239,23 +263,23 @@ h1, h2, h3, h4, h5, h6 {
 
 		}
 
-			a:hover {
+		a:hover {
 
-				-webkit-transform: skew(-20deg,0deg);
-				-mos-transform: skew(-20deg,0deg);
-				-ms-transform: skew(-20deg,0deg);
-				-o-transform: skew(-20deg,0deg);
-				transform: skew(-20deg,0deg);
+			-webkit-transform: skew(-20deg,0deg);
+			-mos-transform: skew(-20deg,0deg);
+			-ms-transform: skew(-20deg,0deg);
+			-o-transform: skew(-20deg,0deg);
+			transform: skew(-20deg,0deg);
 
 				// color: $text-lighter;
 			}
 		}
 
-}
+	}
 
-#social-navbar {
-	@extend #outer-navbar;
-	margin-top: 1.5em;
+	#social-navbar {
+		@extend #outer-navbar;
+		margin-top: 1.5em;
 	// position: fixed;
 	// bottom: 0px;
 
@@ -299,9 +323,50 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+.commercial {
+
+	margin-bottom: 6em;
+	// display: table;
+	display: block;
+
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#susanwiggs {
+	background-image: url('./img/susan-logo-2.png');
+	height: 150px;
+}
+
+#worldfilm {
+	background-image: url('./img/prague-logo-2.png');
+}
+
+#swift {
+	background-image: url('./img/swift-logo.png');
+	height: 200px;
+}
+
+.commercial-text {
+	display: none;
+	// opacity: 0;
+	// display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 1.25em;
+}
+
+
 .published {
 	display: block;
-	background-color: $lightest-gray;
+	// background-color: $lightest-gray;
 	// background-color: #639886;
 	// padding-top: 2em;
 	// padding-bottom: 2em;
@@ -412,16 +477,55 @@ footer {
 
 
 // When the top navbar doesn't all fit on one line anymore
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
-}
+	#outer-navbar {
 
+		li {
+			// display: inline-block;
 
-@include media-query(palm){ 
+			a {
+				font-size: 1em;
 
-	#sidebar {
-		position: relative;
+			}
+		}
 	}
 
 }
+
+	@include media-query(palm){ 
+
+		#sidebar {
+			position: relative;
+			width: 100%;
+			max-width: none;
+		}
+
+		#outer-navbar {
+			margin-top: 1em;
+			margin-bottom: 1em;
+
+			li {
+				display: inline-block;
+			}
+		}
+
+		#name {
+		text-align: left;
+
+		}
+
+		.personal-image {
+			display: block;
+			margin-right: 0;
+			margin-bottom: 4em;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+		}
+
+	}
 

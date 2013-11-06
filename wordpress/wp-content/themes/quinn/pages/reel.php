@@ -1,4 +1,4 @@
-<div id="reel">
+<div id="reel" class="content">
 
 	<div class="responsive-container">
 		<iframe src="//player.vimeo.com/video/10924639?title=0&amp;byline=0&amp;portra

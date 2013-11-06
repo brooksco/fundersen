@@ -1,6 +1,4 @@
-<div class="content">
-
-	<div class="published">
+<div class="published" class="content">
 
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/prague-book-cover.jpg" />
 
@@ -28,19 +26,7 @@
 
 	<a href="http://www.amazon.com/World-Film-Locations-Prague-Intellect/dp/1783200278/">Amazon</a>
 
-	</div>
-
 </div>
 
-<style>
 
-footer {
-	margin-top: -10em;
-	/*color: white;*/
-}
 
-footer nav li a {
-	/*color: white;*/
-}
-
-</style>

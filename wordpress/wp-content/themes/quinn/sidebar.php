@@ -2,7 +2,7 @@
 
 <a id="name-link" href="<?php echo site_url(); ?>">
 	<h2 id="name">
-		Quinn<br>Gunderson
+		Quinn<br>Gundersen
 	</h2>
 </a>
 

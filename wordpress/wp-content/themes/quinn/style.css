@@ -2326,7 +2326,7 @@ label,
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  *
  */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   /**
   * Whole
   */
@@ -2425,7 +2425,7 @@ label,
 
   .palm-eleven-twelfths {
     width: 91.666%; } }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
   /**
   * Whole
   */
@@ -2524,7 +2524,7 @@ label,
 
   .lap-eleven-twelfths {
     width: 91.666%; } }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 601px) {
   /**
   * Whole
   */
@@ -3217,7 +3217,7 @@ label,
   position: absolute !important;
   width: 1px !important; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .accessibility--palm,
   .visuallyhidden--palm {
     border: 0 !important;
@@ -3228,7 +3228,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
   .accessibility--lap,
   .visuallyhidden--lap {
     border: 0 !important;
@@ -3239,7 +3239,7 @@ label,
     padding: 0 !important;
     position: absolute !important;
     width: 1px !important; } }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 601px) {
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
     border: 0 !important;
@@ -3288,7 +3288,7 @@ label,
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
 body {
-  font-family: 'Gentium Book Basic';
+  font-family: "Gentium Book Basic";
   font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -3318,7 +3318,7 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 2em; }
+  padding-top: 2.5em; }
 
 #home {
   color: white;
@@ -3339,14 +3339,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em; }
 
 #personal {
+  padding-top: 4em;
   padding-bottom: 5em;
   white-space: nowrap; }
-  #personal img {
-    height: 500px; }
 
 .personal-image {
   display: inline-block;
   margin-right: 4em; }
+  .personal-image img {
+    height: 500px;
+    max-width: none; }
 
 #name-link {
   text-decoration: none; }
@@ -3356,12 +3358,27 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   text-align: right;
   color: #333333; }
+  #name:hover {
+    color: #555555; }
 
 .post {
-  padding-top: 2em; }
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em; }
+
+.alignleft {
+  float: left;
+  margin-right: 1em; }
+
+.alignright {
+  float: right;
+  margin-left: 1em; }
 
 .post-break {
-  margin-top: 3em;
   margin-bottom: 1em;
   width: 75%;
   margin-left: auto;
@@ -3375,8 +3392,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #49997e; }
 
 .post-author {
-  text-align: center;
-  font-size: .9em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: 1em;
   color: #777777;
   font-weight: 300; }
 
@@ -3455,10 +3473,38 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%; }
 
+.commercial {
+  margin-bottom: 6em;
+  display: block;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#susanwiggs {
+  background-image: url("./img/susan-logo-2.png");
+  height: 150px; }
+
+#worldfilm {
+  background-image: url("./img/prague-logo-2.png"); }
+
+#swift {
+  background-image: url("./img/swift-logo.png");
+  height: 200px; }
+
+.commercial-text {
+  display: none;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.25em; }
+
 .published {
   display: block;
-  background-color: #fafafa;
-  padding: 2em 2.5em 20em 2.5em; }
+  padding: 2.5em 2.5em 20em 2.5em; }
   .published h3 {
     font-weight: 700;
     margin-bottom: .5em; }
@@ -3513,6 +3559,28 @@ footer p {
   font-size: .9em;
   text-align: center; }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 800px) {
+  #outer-navbar li a, #social-navbar li a {
+    font-size: 1em; } }
+@media only screen and (max-width: 600px) {
   #sidebar {
-    position: relative; } }
+    position: relative;
+    width: 100%;
+    max-width: none; }
+
+  #outer-navbar, #social-navbar {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+    #outer-navbar li, #social-navbar li {
+      display: inline-block; }
+
+  #name {
+    text-align: left; }
+
+  .personal-image {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 4em; }
+    .personal-image img {
+      max-width: 100%;
+      height: auto; } }

@@ -47,6 +47,6 @@
 
 
 
-
+<h3 class="post-author">- <?php the_author() ?></h3>
 
 </article><!-- #post -->

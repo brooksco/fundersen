@@ -17,14 +17,14 @@ add_action( 'wp_enqueue_scripts', 'load_my_scripts' );
 
 
 // Remove Gallery Styling
-// add_filter( 'gallery_style', 'my_gallery_style', 99 );
+add_filter( 'gallery_style', 'my_gallery_style', 99 );
 
-// function my_gallery_style() {
-//     return "
-// ";
-// }
+function my_gallery_style() {
+    return "
+";
+}
 
-// add_filter( 'use_default_gallery_style', '__return_false' );
+add_filter( 'use_default_gallery_style', '__return_false' );
 
 
 ?>

@@ -1,41 +1,3 @@
-<script src="js/jquery.js"></script>
-<script>
-	$(function(){
-		$(".commercial").hover(function() {
-			 $(this).off();
-
-			$(this).css("display", "table");
-			$(this).find(".commercial-text").css({
-				"display" : "table-cell",
-				"background-color" : "rgba(255, 255, 255, .85)"
-			}).hide().fadeIn(400);
-
-		},
-
-
-		// After hover over
-		function() {
-
-			// $(this).css("display", "block");
-			
-			$(this).find(".commercial-text").fadeOut(400, function() {
-
-				$(this).css("display", "none");
-				$(this).parent().css("display", "block");
-
-			});
-		});
-	});
-
-
-
-// $( "#book" ).fadeIn( "slow", function() {
-    // Animation complete
-  // });
-
-
-</script>
-
 <div class="content">
 
 	<div id="susanwiggs" class="commercial">
@@ -48,12 +10,6 @@
 
 		</p>
 
-		<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/susan-logo-2.png" /> -->
-
-		<!-- <h2>Susan Wiggs</h2> -->
-
-		
-
 	</div>
 
 	<div id="worldfilm" class="commercial">
@@ -65,17 +21,9 @@
 
 		</p>
 
-		<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/prague-logo-2.png" /> -->
-
-		<!-- <h2>World Film Locations</h2> -->
-
 	</div>
 
 	<div id="swift" class="commercial">
-
-		<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/swift-logo.png" /> -->
-
-		<!-- <h2>Swift Industries</h2> -->
 
 		<p class="commercial-text">
 

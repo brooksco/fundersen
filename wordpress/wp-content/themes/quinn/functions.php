@@ -14,7 +14,7 @@ function load_my_scripts()
 }
 add_action( 'wp_enqueue_scripts', 'load_my_scripts' );
 // remove_filter( 'the_content', 'wpautop' );
-// remove_filter( 'the_content', 'wpautop' );
+
 
 // Remove Gallery Styling
 // add_filter( 'gallery_style', 'my_gallery_style', 99 );

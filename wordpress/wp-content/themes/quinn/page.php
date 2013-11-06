@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 
-
 <?php if ( is_page('Reel') ) : ?>
 
 
@@ -27,12 +26,6 @@
 	</script>
 
 <?php endif; ?>
-
-<?php if ( is_page('Personal') ) {
-
-include 'pages/personal.php'; 
-
-} ?>
 
 
 <?php if ( is_page('About') ) {

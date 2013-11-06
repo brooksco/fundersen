@@ -17,26 +17,17 @@ $(document).ready(function() {
 
 
 	$(".commercial").hover(function() {
-			$(this).off();
 
-			$(this).css("display", "table");
-			$(this).find(".commercial-text").css({
-				"display" : "table-cell",
-				"background-color" : "rgba(255, 255, 255, .85)"
-			}).hide().fadeIn(400);
+		$(this).find(".commercial-text").css("opacity", "1");
+		$(this).off();
 
-			// },
+	},
 
-			// function() {
-				
-			// 	$(this).find(".commercial-text").fadeOut(400, function() {
+	function() {
 
-			// 		$(this).css("display", "none");
-			// 		$(this).parent().css("display", "block");
+		$(this).find(".commercial-text").css("opacity", "0");
 
-			// 	});
-				
-			});
+	});
 
 
 }); // End ready

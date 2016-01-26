@@ -8,7 +8,6 @@
 
 get_header(); ?>
 
-
 		<div>
 
 			<?php /* The loop */ ?>
@@ -19,6 +18,5 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 		</div>
-
 
 <?php get_footer(); ?>

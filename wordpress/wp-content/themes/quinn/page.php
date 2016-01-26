@@ -3,7 +3,6 @@
 
 <?php if ( is_page('Reel') ) : ?>
 
-
 	<script>
 		$(document).ready(function() {
 
@@ -13,11 +12,13 @@
 			        $(document.body).css("height", "100%");
 			        $('html').css("height", "100%")
 			        $(".unit-spacing, .grid, .grid__item, #main").css("height", "100%");
+			        $("#byline").hide();
 			    },  
 			    unmatch : function() {
 			       $(document.body).css("height", "auto");
 			        $('html').css("height", "auto")
 			        $(".unit-spacing, .grid, .grid__item, #main").css("height", "auto");
+			        $("#byline").show();
 			    }
 			});
 
@@ -27,12 +28,31 @@
 
 <?php endif; ?>
 
+<?php if ( is_page('Personal') ) : ?>
 
-<?php if ( is_page('About') ) {
+	<style>
 
-	include 'pages/about.php'; 
+	#byline {
+		display: none;
+	}
 
-} ?>
+	@media (max-width: 600px) {
+		#byline {
+			display: block;
+		}
+	}
+
+	</style>
+
+<?php endif; ?>
+
+
+<?php if ( is_page('Work') ) : ?>
+
+<?php include 'pages/commercial.php'; ?>
+
+<?php endif; ?>
+
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); the_content(); ?>
 

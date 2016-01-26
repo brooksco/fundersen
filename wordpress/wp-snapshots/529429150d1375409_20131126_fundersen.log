@@ -1,0 +1,159 @@
+******************************************************************************** 
+PACKAGE-LOG: 04:52:37 
+NOTICE: Do not post to public sites or forums 
+******************************************************************************** 
+duplicator: 0.4.6 
+wordpress: 3.7.1 
+php: 5.3.1 
+php sapi: apache2handler 
+server: Apache/2.2.14 (Unix) DAV/2 mod_ssl/2.2.14 OpenSSL/0.9.8l PHP/5.3.1 mod_perl/2.0.4 Perl/v5.10.1 
+browser: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36 
+package name: 20131126_fundersen 
+php_max_time: set from=30 to=5000 
+php_max_memory: set from=128M to=5000M 
+mysql wait_timeout:5000 
+recorded table id: 1 
+******************************************************************************** 
+BUILD SQL SCRIPT: 
+******************************************************************************** 
+bs_coupons (0) 
+bs_events (0) 
+bs_reservations (0) 
+bs_reservations_items (0) 
+bs_reserved_time (0) 
+bs_reserved_time_items (0) 
+bs_schedule (0) 
+bs_schedule_days (1) 
+bs_service_days_settings (1) 
+bs_service_settings (1) 
+bs_services (2) 
+bs_settings (18) 
+bs_transactions (0) 
+columns_priv (0) 
+couch_comments (0) 
+couch_data_numeric (0) 
+couch_data_text (87) 
+couch_fields (87) 
+couch_folders (0) 
+couch_fulltext (16) 
+couch_levels (5) 
+couch_pages (16) 
+couch_relations (0) 
+couch_settings (3) 
+couch_templates (16) 
+couch_users (1) 
+db (2) 
+event (0) 
+func (0) 
+fundersen_commentmeta (0) 
+fundersen_comments (1) 
+fundersen_duplicator (1) 
+fundersen_links (0) 
+fundersen_options (165) 
+fundersen_postmeta (54) 
+fundersen_posts (92) 
+fundersen_term_relationships (9) 
+fundersen_term_taxonomy (1) 
+fundersen_terms (1) 
+fundersen_usermeta (23) 
+fundersen_users (1) 
+general_log (0) 
+help_category (37) 
+help_keyword (450) 
+help_relation (990) 
+help_topic (504) 
+host (0) 
+jstitch_commentmeta (0) 
+jstitch_comments (0) 
+jstitch_links (0) 
+jstitch_options (421) 
+jstitch_postmeta (107) 
+jstitch_posts (41) 
+jstitch_term_relationships (3) 
+jstitch_term_taxonomy (13) 
+jstitch_terms (13) 
+jstitch_usermeta (17) 
+jstitch_users (1) 
+jstitch_woocommerce_attribute_taxonomies (0) 
+jstitch_woocommerce_downloadable_product_permissions (0) 
+jstitch_woocommerce_order_itemmeta (0) 
+jstitch_woocommerce_order_items (0) 
+jstitch_woocommerce_tax_rate_locations (0) 
+jstitch_woocommerce_tax_rates (0) 
+jstitch_woocommerce_termmeta (2) 
+ndb_binlog_index (0) 
+plugin (0) 
+proc (0) 
+procs_priv (0) 
+servers (0) 
+slow_log (0) 
+tables_priv (0) 
+time_zone (0) 
+time_zone_leap_second (0) 
+time_zone_name (0) 
+time_zone_transition (0) 
+time_zone_transition_type (0) 
+user (5) 
+wp_commentmeta (0) 
+wp_comments (3) 
+wp_dopbsp_calendars (1) 
+wp_dopbsp_days (115) 
+wp_dopbsp_forms (1) 
+wp_dopbsp_forms_fields (5) 
+wp_dopbsp_forms_select_options (0) 
+wp_dopbsp_reservations (0) 
+wp_dopbsp_settings (1) 
+wp_dopbsp_users (2537) 
+wp_duplicator (2) 
+wp_links (0) 
+wp_new_royalsliders (2) 
+wp_options (263) 
+wp_postmeta (126) 
+wp_posts (219) 
+wp_term_relationships (1) 
+wp_term_taxonomy (1) 
+wp_terms (1) 
+wp_usermeta (18) 
+wp_users (1) 
+SQL CREATED: /Applications/XAMPP/xamppfiles/htdocs/fundersen/wordpress/wp-snapshots/529429150d1375409_20131126_fundersen_database.sql 
+SQL FILE SIZE: 2.92MB 
+SQL RUNTIME: 0.9709 sec. 
+******************************************************************************** 
+BUILD ZIP PACKAGE: 
+******************************************************************************** 
+PACKAGE DIR:  /Applications/XAMPP/xamppfiles/htdocs/fundersen/wordpress 
+PACKAGE FILE: /Applications/XAMPP/xamppfiles/htdocs/fundersen/wordpress/wp-snapshots/529429150d1375409_20131126_fundersen_package.zip 
+FILTER EXTENSIONS:  '' 
+FILTER DIRECTORIES: '' 
+---------------------------------------- 
+STARTING PACKAGE BUILD 
+ADDED=>SQL: /Applications/XAMPP/xamppfiles/htdocs/fundersen/wordpress/wp-snapshots/529429150d1375409_20131126_fundersen_database.sql 
+BUILDING FILE LIST 
+FILE LIST COMPLETE: 0.1936 sec. 
+FILE LIST STATS: Dirs 153 | Files 1415 | Links 0 |  
+
+PACKAGE INFO: ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 1569
+    [filename] => /Applications/XAMPP/xamppfiles/htdocs/fundersen/wordpress/wp-snapshots/529429150d1375409_20131126_fundersen_package.zip
+    [comment] => 
+)
+ 
+CREATING PACKAGE 
+CLOSING PACKAGE RESULT: '1' 
+PACKAGE FILE SIZE: 70.16MB 
+PACKAGE RUNTIME: 6.3691 sec. 
+******************************************************************************** 
+BUILD INSTALLER FILE: 
+******************************************************************************** 
+INSTALLER FILE: Build Start 
+INSTALLER FILE: Build Finished 
+INSTALLER FILE: Preping for use 
+INSTALLER FILE: Complete [/Applications/XAMPP/xamppfiles/htdocs/fundersen/wordpress/wp-snapshots/529429150d1375409_20131126_fundersen_installer.php] 
+******************************************************************************** 
+FILE SIZE: Zip:70.16MB | SQL:2.92MB | Installer:527.06KB 
+TOTAL PROCESS RUNTIME: 7.4453 sec. 
+DONE PROCESSING => 20131126_fundersen 04:52:44 
+******************************************************************************** 

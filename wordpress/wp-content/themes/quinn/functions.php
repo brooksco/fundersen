@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'load_my_scripts' );
 add_filter( 'gallery_style', 'my_gallery_style', 99 );
 
 function my_gallery_style() {
-    return "
+    return "<div>
 ";
 }
 

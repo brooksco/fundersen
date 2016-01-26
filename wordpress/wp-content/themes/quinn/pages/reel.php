@@ -6,14 +6,6 @@
 		<webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 
-	<!-- <p>
-
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
-		amet gravida sapien, ac tincidunt dui. Curabitur consequat libero nec
-		lorem commodo bibendum. Aliquam a tempor tellus. Praesent sit amet
-		turpis lectus. Vestibulum convallis ante sit amet mattis rhoncus.
-
-	</p> -->
 
 	<p>
 
@@ -22,16 +14,3 @@
 	</p>
 
 </div>
-
-<style>
-
-/*footer {
-	margin-top: -10em;
-	color: white;
-}
-
-footer nav li a {
-	color: white;
-}*/
-
-</style>

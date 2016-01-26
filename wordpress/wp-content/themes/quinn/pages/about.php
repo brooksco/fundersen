@@ -1,11 +1,14 @@
-<div id="home" class="content">
+<div id="about" class="content">
 
-	<p>
+	<!-- <img id="headshot" src="<?php echo get_stylesheet_directory_uri(); ?>/img/headshot-web.jpg" /> -->
+	<iframe src="//player.vimeo.com/video/114496651" width="500" height="281" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+	<h1 id="title-text">
 
 		Quinn Gundersen is a filmmaker and photographer from Seattle,
 		Washington, currently based in New York.
 	
-	</p>
+	</h1>
 
 	<p>
 
@@ -29,19 +32,5 @@
 	
 	</p> 
 
-
 </div>
-
-<style>
-
-footer {
-	/*margin-top: -8em;*/
-	color: white;
-}
-
-footer nav li a {
-	color: white;
-}
-
-</style>
 

@@ -1,33 +1,27 @@
 // @codekit-prepend "jquery-1.10.2.js"
 // @codekit-prepend "enquire.js"
-// @codekit-prepend "flowtype.js"
 
 // Once the page has loaded...
 $(document).ready(function() {
 
+	enquire.register("screen and (max-width:600px)", {
 
-	$('#name').flowtype({
-		// minimum   : 500,
-	 	// maximum   : 400,
-		// minFont   : 12,
-		maxFont   : 50,
-		fontRatio : 6.5,
-		// lineRatio : 1.45
-	});
+    // OPTIONAL
+    // If supplied, triggered when a media query matches.
+    match : function() {
+    	$('#social-navbar').prependTo('#footer');
 
-
-	$(".commercial").hover(function() {
-
-		$(this).find(".commercial-text").css("opacity", "1");
-		$(this).off();
-
-	},
-
-	function() {
-
-		$(this).find(".commercial-text").css("opacity", "0");
-
-	});
+    },      
+                                
+    // OPTIONAL
+    // If supplied, triggered when the media query transitions 
+    // *from a matched state to an unmatched state*.
+    unmatch : function() {
+    	$('#social-navbar').insertAfter('#outer-navbar');
+    },    
+    
+      
+});
 
 
 }); // End ready
